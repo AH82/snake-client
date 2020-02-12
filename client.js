@@ -11,6 +11,18 @@ const connect = function() {
 conn.on('data', data => {
   console.log('server says: ', data);
 });
+//Client Can Send a Reply (Computer B)
+
+conn.on('connect', () => {
+  console.log('Successfully connected to game server')
+  conn.write('Name: HAT', );
+});
+
+// conn.on('data', (data) => {
+//   conn.write('Name: HAT');
+// });
+
+  //main function's return
   return conn;
 }
 
