@@ -23,11 +23,15 @@ const setupInput = function(conn) {
     // if (key === 'd') { conn.write('Move: right')};
 
     switch (key) {
-      case 'w' : conn.write("Move: up");
-      case 's' : conn.write("Move: down");
-      case 'a' : conn.write("Move: left");
-      case 'd' : conn.write("Move: right");
+      case 'w' : conn.write("Move: up"); break;
+      case 's' : conn.write("Move: down"); break;
+      case 'a' : conn.write("Move: left"); break;
+      case 'd' : conn.write("Move: right"); break;
+      case 'h' : conn.write("Say: haha!"); break;
+      case 'm' : conn.write("Say: move!"); break;
+      case 'i' : conn.write("Say: ncmg!"); break;
     }
+
   })
   //
   stdin.resume();
