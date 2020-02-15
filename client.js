@@ -16,11 +16,10 @@ conn.on('data', data => {
 conn.on('connect', () => {
   console.log('Successfully connected to game server')
   conn.write('Name: HAT', );
+  // console.log('Moving up');
+  // conn.write('Move: up');
+  // setInterval( () => {conn.write('Move: up')}, 1000);
 });
-
-// conn.on('data', (data) => {
-//   conn.write('Name: HAT');
-// });
 
   //main function's return
   return conn;
